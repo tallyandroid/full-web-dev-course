@@ -1,0 +1,13 @@
+p {
+  color: blue;
+  font-size: 2rem;
+  font-family: Arial;
+  border: 2px solid yellow;
+}
+
+#decide {
+  color: pink;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: 2px solid black;
+}
