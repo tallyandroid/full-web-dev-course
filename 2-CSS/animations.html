@@ -10,16 +10,14 @@
             background-color: rgb(11, 11, 177);
             color: white;
             height: 100px;
-            width: 100px;
-            /* transform: rotate(30deg);
-            -ms-transform: rotate(30deg);
-            -webkit-transform: rotate(30deg); */
-            transform: translate(20px, 30px);
-            transform: scale(0.5, 1);
-            
-            
-            
-        }
+            width: auto;
+            -webkit-animation: myanimation 3s;
+          }
+
+          @-webkit-keyframes myanimation {
+            from{background: green}
+              to{background: #3A5795}
+          }
 
         .yellowbox {
             background-color: rgb(229, 229, 61);
