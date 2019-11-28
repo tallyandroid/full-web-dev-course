@@ -1,4 +1,8 @@
 /* Styling the header */
+* {
+  font-family:  Arial;
+}
+
 #container {
   width: 1050px;
   border: 1px solid grey;
@@ -55,3 +59,56 @@ h1 a {
 }
 
 /* End styling header */
+.menu {
+  height: 70px;
+  background: linear-gradient(#F8F594, #D5D533);
+  padding: 7px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu ul li {
+  float: left;
+  padding: 0 30px;
+  height: 30px;
+  border-right: 1px solid #5d12e7;
+  
+}
+
+.menu ul li:last-child {
+  border-right: none;
+}
+
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #5d12e7;
+  line-height: 30px;
+  -webkit-transition: font-size 0.3s ease;
+  -moz-transition: font-size 0.3s ease;
+  -o-transition: font-size 0.3s ease;
+  -ms-transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+
+.menu a:hover, .menu a.active {
+  font-size: 20px;
+  font-weight: bold;
+  color: #C34FDB;
+}
+
+.introduction {
+  background: linear-gradient(#E5F2BB, #B7E952);
+  padding: 30px;
+  margin: 16px 0;
+
+}
+
+.introduction h3 {
+  font-size: 45px;
+  color: #316901;
+}
+
