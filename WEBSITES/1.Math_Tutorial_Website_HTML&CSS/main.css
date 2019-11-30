@@ -142,9 +142,20 @@ ul {
   transition: font-size 0.3s ease;
 }
 
+.left-sidebar ul{
+  padding-top: 8px;
+}
+
 .left-sidebar ul li {
   padding-bottom: 6px;
-  list-style-image: url(images/arrow.png);
+  padding-left: 10px;
+  list-style-image: url('images/arrow.png');
+}
+
+.right-sidebar ul li {
+  padding-bottom: 6px;
+  padding-left: 10px;
+  list-style-image: url('images/tick.png') no-repeat left center;
 }
 
 .sidebar a:hover, .sidebar a.active {
