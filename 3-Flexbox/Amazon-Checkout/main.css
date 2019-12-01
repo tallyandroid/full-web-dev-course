@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.details {
+    background-color: greenyellow;
+}
+
+.comments {
+    background-color: deepbluesky;
+}
+.submit {
+    background-color: darkred;
+    margin-top: auto;
+}
