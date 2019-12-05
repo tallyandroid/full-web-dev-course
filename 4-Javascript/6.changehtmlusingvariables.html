@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Variables and Data Types</title>
+    <title>Change HTML Using Variables</title>
     <style>
         .bluebox {
             background-color: rgb(11, 11, 177);
             color: white;
             height: 100px;
             width: auto;
-            
-            
-            
         }
 
         .yellowbox {
@@ -54,33 +51,23 @@
     <button id="button1">Change Facebook Style.</button>
     <button id="button2">Change Apple Style.</button>
     <script>
-        var x = 3
-        console.log(x)
+        var color  = 'rgb(18, 149, 68)'
 
-        var y
-        y = 5
+        document.getElementById("button1").onclick = function(){
+            document.getElementById("facebook").style.backgroundColor = color
+        }
 
-        var z
-        console.log("the value of z is " + z)
-        z = x + y
-        console.log("the type of z is: " + typeof(z))
-        console.log("the value of z is " + z)
-        z = x + " " + y
-        console.log("the value of z is " + z)
+        var x, y, z, appleColor
+        x = Math.round(Math.random() * 256)
+        document.getElementById("button2").onclick = function() {
+            x = Math.round(Math.random() * 256)
+            y = Math.round(Math.random() * 256)
+            z = Math.round(Math.random() * 256)
+            appleColor = 'rgb(' + x + ', ' + y + ', ' + z + ')'
+            document.getElementById("apple").style.backgroundColor = appleColor
+            document.getElementById("apple").innerHTML = '<p>' + appleColor + '</p>'
 
-      var greeting = "Hello"
-      var firstName = "John"
-      var message = greeting + " " + name
-      console.log("the value of message is : " + message)
-      console.log("the value of message is : " + typeof(message))
-
-      var check = (x == 3)
-      console.log("the value of check is: " + check)
-      console.log("the type of check is: " + typeof(check))
-
-      var myArray = [1,2,3]
-      console.log(myArray)
-      console.log(typeof(myArray))
+        }
 
     </script>
 </body>
