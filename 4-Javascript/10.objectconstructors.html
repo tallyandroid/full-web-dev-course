@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects Using New</title>
+</head>
+<body>
+    
+    <p>Javascript</p>
+    <script>
+        function phone(make, model, warranty, color) {
+            this.make = make;
+            this.model = model;
+            this.warranty = warranty;
+            this.color = color;
+            this.extendWarranty = function(x) {
+                this.warranty += x
+            }
+        }
+let myPhone = new phone("Apple", "iPhone 5s", 12, "white");
+console.log(myPhone)
+myPhone.extendWarranty(12)
+console.log(myPhone.warranty)
+
+myPhone.condition = "like new"
+console.log(myPhone)
+console.log(myPhone.condition)
+
+
+var myBrothersPhone = new phone("Apple", "iPhone 4", 6, "black");
+console.log(myBrothersPhone)
+console.log(myBrothersPhone.condition)
+
+phone.prototype.condition = "new"
+console.log(myBrothersPhone.condition)
+console.log(myPhone.condition)
+    </script>
+</body>
+</html>

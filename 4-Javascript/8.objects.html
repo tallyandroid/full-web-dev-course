@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects</title>
+</head>
+<body>
+    
+    <script>
+        let myPhone = {
+            make: "Apple",
+            model: "iPhone 4",
+            warranty: 12,
+            color: "white"
+        }
+
+        console.log(myPhone)
+        delete myPhone.warranty
+        console.log(myPhone.model)
+
+        let myOtherPhone = myPhone
+        console.log(myOtherPhone)
+        myOtherPhone.model = "iPhone 5"
+        console.log(myOtherPhone)
+        console.log(myPhone)
+    </script>
+</body>
+</html>
