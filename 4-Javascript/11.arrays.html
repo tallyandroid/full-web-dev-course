@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+<body>
+    <p id="myParagraph">Javascript</p>
+
+    <script>
+        let shoppingList = ["eggs", "bread", "milk"]
+        // let shoppingList = new Array("bread", "eggs", "milk")
+        showResult(shoppingList)
+        showResult(shoppingList[0])
+        showResult(shoppingList[2])
+        // document.getElementById("myParagraph").innerHTML += "<br/>" + shoppingList;
+
+        // document.getElementById("myParagraph").innerHTML += "<br/>" + shoppingList[0];
+        // document.getElementById("myParagraph").innerHTML += "<br/>" + shoppingList[2];
+
+        function showResult(x) {
+            document.getElementById("myParagraph").innerHTML += "<br />" + x
+        }
+        shoppingList[1] = "yogurt"
+        showResult(shoppingList)
+        shoppingList[2] = "orange"
+        showResult(shoppingList)
+        delete shoppingList[1]
+        showResult(shoppingList)
+        // window.alert(shoppingList[1])
+        shoppingList[1] = "yogurt"
+        showResult(shoppingList)
+        shoppingList.splice(1,1)
+        showResult(shoppingList)
+        shoppingList.splice(1,0, "banana", "apple")
+        shoppingList.sort()
+        showResult(shoppingList)
+        shoppingList.reverse()
+        showResult(shoppingList)
+        var myString = "what is the weather like"
+        var myArray = myString.split(' ')
+        showResult(myArray)
+
+
+
+    </script>
+</body>
+</html>
