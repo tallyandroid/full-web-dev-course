@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alert Boxes</title>
+</head>
+<body>
+  <p id="myParagraph">Javascript</p>
+
+  <script>
+    window.alert("Welcome to our page!")
+    
+    var acceptCookies = window.confirm("Please conform you accept cookies")
+    if (acceptCookies === true)
+{
+  window.alert("You confirmed you accept cookies.")
+}  else {
+  window.alert("You do not accept cookies.")
+}
+
+var visitor = prompt("Please enter your name.")
+window.alert("Hi " + visitor + ", we wish you a nice experience on our page!  Don't forget to like us on Facebook!" )
+</script>
+
+</body>
+</html>
